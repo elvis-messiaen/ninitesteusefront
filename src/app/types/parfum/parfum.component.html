@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="mt-50 pt-50 pb-50">
+    <div class="d-flex direction">
+      <div class="contourCard card largCard tets" *ngFor="let parfum of parfum">
+        <img
+          class="card-img-top d-flex taillePhoto pb-20"
+          src="assets/parfum/p1.jpg"
+          width="250px"
+          alt="Card image cap"
+        />
+        <div class="card-body text-center adpateText">
+          <h5 class="card-title">{{ parfum.title }}</h5>
+          <p class="card-text">
+            {{ parfum.descriptif }}
+          </p>
+          <a href="#" class="btn btn-primary">En savoir +</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

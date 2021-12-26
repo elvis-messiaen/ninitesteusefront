@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg colorNav">
+  <div class="container-fluid">
+    <a class="navbar-brand NomNav active" href="#">Nini testeuse</a>
+    <a class="navbar-brand NomNav active" routerLink="" >Accueil</a>
+    <a class="navbar-brand NomNav active" routerLink="/page" >page_a_effacer_apres</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDarkDropdown"
+      aria-controls="navbarNavDarkDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle NomNav"
+            href="#"
+            id="navbarDarkDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Categories
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="navbarDarkDropdownMenuLink"
+          >  
+            <li><a class="dropdown-item" routerLink="/cosmetiques" routerLinkActive="active">Cosmétiques</a></li>
+            <li><a class="dropdown-item" routerLink="/parfum" routerLinkActive="active">Parfum</a></li>
+            <li><a class="dropdown-item" routerLink="/visage" routerLinkActive="active">Visage</a></li>
+            <li><a class="dropdown-item" routerLink="/corps" routerLinkActive="active">Corps</a></li>
+            <li><a class="dropdown-item" routerLink="/mains" routerLinkActive="active">Main</a></li>
+            <li><a class="dropdown-item" routerLink="/cheveux" routerLinkActive="active">Cheveux</a></li>
+            <li><a class="dropdown-item" routerLink="/sante" routerLinkActive="active">Santé</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle NomNav NomNav"
+            href="#"
+            id="navbarDarkDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Social
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="navbarDarkDropdownMenuLink"
+          >
+            <li><a class="dropdown-item" href="#">à propos de nous</a></li>
+            <li><a class="dropdown-item" href="#">nous contacter</a></li>
+            <li><a class="dropdown-item" href="#">reseau sociaux</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="place">
+        <input
+          class="form-control mr-2"
+          type="search"
+          placeholder="Rechercher"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success NomNav" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

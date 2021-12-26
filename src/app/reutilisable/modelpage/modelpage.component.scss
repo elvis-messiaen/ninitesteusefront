@@ -1,0 +1,32 @@
+.centerTexte {
+  color: orange;
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.adpateText {
+  width: 320px;
+  padding: 20px;
+}
+.contourCard {
+  flex-direction: row;
+  margin: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 2px 2px 10px #050505, -2px -2px 10px #050505;
+  padding-bottom: 20px;
+}
+.taillePhoto {
+  padding-top: 2vw;
+  padding: 2vw;
+  width: 50vh;
+}
+.etape {
+  padding-top: 5vh;
+  text-align: center;
+}
+.card-text{
+    padding-top: 5vh;
+     line-height: 5vh;
+}
