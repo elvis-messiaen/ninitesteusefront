@@ -11,6 +11,8 @@ import { CorpsComponent } from './types/corps/corps.component';
 import { ParfumComponent } from './types/parfum/parfum.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './sociaux/contact/contact.component';
+import { FormulaireComponent } from './component/formulaire/formulaire.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +25,9 @@ const routes: Routes = [
   { path: 'visage', component: VisageComponent },
   { path: 'cheveux', component: CheveuxComponent },
   { path: 'page', component: ModelpageComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'formulaire', component: FormulaireComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({

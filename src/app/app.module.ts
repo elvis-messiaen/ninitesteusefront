@@ -21,6 +21,8 @@ import { MainsComponent } from './types/mains/mains.component';
 import { VisageComponent } from './types/visage/visage.component';
 import { ModelpageComponent } from './reutilisable/modelpage/modelpage.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormulaireComponent } from './component/formulaire/formulaire.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,8 +44,9 @@ import { HttpClientModule } from '@angular/common/http';
     MainsComponent,
     VisageComponent,
     ModelpageComponent,
+    FormulaireComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule,HttpClientModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

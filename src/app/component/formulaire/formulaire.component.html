@@ -1,0 +1,21 @@
+<div class="container">
+    <form (ngSubmit)="submit()" [formGroup]="form">
+        <div class="mt-100 ml-50  label flex-column form-group">
+            <label class="mr-20">Nom</label>
+            <input formControlName="nom"  type="text">
+        </div>
+        <div class="mt-100 ml-50  label flex-column form-group">
+            <label class="mr-20">Email</label>
+            <input formControlName="email" type="email">
+        </div>
+        <div class="mt-100 ml-50  label flex-column form-group">
+            <label class="mr-20">Mot de passe</label>
+            <input formControlName="password"  type="password">
+        </div>
+        <div class="mt-100 ml-50  label flex-column form-group">
+            <label class="mr-20">Confirmation</label>
+            <input formControlName="check" type="password">
+        </div>
+        <button class="btn greenButton">sauvegarder</button>
+    </form>
+</div>

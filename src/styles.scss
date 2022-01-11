@@ -35,6 +35,9 @@ body {
 .ml-50 {
   margin-left: 50px;
 }
+.ml-100 {
+  margin-left: 100px;
+}
 .mr-20 {
   margin-right: 20px;
 }
@@ -117,4 +120,10 @@ body {
 }
 .tets {
   margin-top: 50px;
+}
+.greenButton {
+  margin: 5px;
+  border-radius: 5px;
+  background: #4cd86a;
+  box-shadow: 2px 2px 4px #b3b3b3, -2px -2px 4px #0e0d0d;
 }
