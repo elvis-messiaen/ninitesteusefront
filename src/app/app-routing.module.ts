@@ -1,3 +1,6 @@
+import { VerificationaccesComponent } from './verificationacces/verificationacces.component';
+import { FormulaireadminComponent } from './component/formulaireadmin/formulaireadmin.component';
+import { ConnexionComponent } from './component/connexion/connexion.component';
 import { ModelpageComponent } from './reutilisable/modelpage/modelpage.component';
 import { HomeComponent } from './component/home/home.component';
 import { CheveuxComponent } from './types/cheveux/cheveux.component';
@@ -27,6 +30,9 @@ const routes: Routes = [
   { path: 'page', component: ModelpageComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'formulaire', component: FormulaireComponent },
+  { path: 'connexion', component: ConnexionComponent },
+  { path: 'admincarte', component: FormulaireadminComponent },
+  { path: 'admincarte/:id', component: VerificationaccesComponent },
   { path: '**', component: HomeComponent },
 ];
 

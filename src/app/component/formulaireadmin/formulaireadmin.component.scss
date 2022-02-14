@@ -11,9 +11,12 @@
 .error{
     color: red;
 }
+.wid {
+    width: 400px;
+}
+
 .ng-valid {
-    border: solid 3px;
-    border-color: green;
+    border-color: rgb(31, 85, 31);
 }
 
 .ng-invalid.ng-touched {

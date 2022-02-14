@@ -1,8 +1,10 @@
 <nav class="navbar navbar-expand-lg colorNav">
   <div class="container-fluid">
     <a class="navbar-brand NomNav active" href="#">Nini testeuse</a>
-    <a class="navbar-brand NomNav active" routerLink="" >Accueil</a>
-    <a class="navbar-brand NomNav active" routerLink="/page" >page_a_effacer_apres</a>
+    <a class="navbar-brand NomNav active" routerLink="">Accueil</a>
+    <a class="navbar-brand NomNav active" routerLink="/page"
+      >page_a_effacer_apres</a
+    >
     <button
       class="navbar-toggler"
       type="button"
@@ -31,15 +33,63 @@
           <ul
             class="dropdown-menu dropdown-menu-dark"
             aria-labelledby="navbarDarkDropdownMenuLink"
-          >  
-            <li><a class="dropdown-item" routerLink="/cosmetiques" routerLinkActive="active">Cosmétiques</a></li>
-            <li><a class="dropdown-item" routerLink="/parfum" routerLinkActive="active">Parfum</a></li>
-            <li><a class="dropdown-item" routerLink="/visage" routerLinkActive="active">Visage</a></li>
-            <li><a class="dropdown-item" routerLink="/corps" routerLinkActive="active">Corps</a></li>
-            <li><a class="dropdown-item" routerLink="/mains" routerLinkActive="active">Main</a></li>
-            <li><a class="dropdown-item" routerLink="/cheveux" routerLinkActive="active">Cheveux</a></li>
-            <li><a class="dropdown-item" routerLink="/sante" routerLinkActive="active">Santé</a></li>
-            
+          >
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/cosmetiques"
+                routerLinkActive="active"
+                >Cosmétiques</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/parfum"
+                routerLinkActive="active"
+                >Parfum</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/visage"
+                routerLinkActive="active"
+                >Visage</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/corps"
+                routerLinkActive="active"
+                >Corps</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/mains"
+                routerLinkActive="active"
+                >Main</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/cheveux"
+                routerLinkActive="active"
+                >Cheveux</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/sante"
+                routerLinkActive="active"
+                >Santé</a
+              >
+            </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -58,11 +108,92 @@
             aria-labelledby="navbarDarkDropdownMenuLink"
           >
             <li><a class="dropdown-item" href="#">à propos de nous</a></li>
-            <li><a class="dropdown-item" routerLink="/contact" routerLinkActive="active">nous contacter</a></li>
-            <li><a class="dropdown-item" routerLink="/formulaire" routerLinkActive="active">reseau sociaux formulaire tempo</a></li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/contact"
+                routerLinkActive="active"
+                >nous contacter</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/formulaire"
+                routerLinkActive="active"
+                >reseau sociaux formulaire tempo</a
+              >
+            </li>
+          </ul>
+        </li>
+
+          <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle NomNav NomNav"
+            href="#"
+            id="navbarDarkDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Administrateur
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="navbarDarkDropdownMenuLink"
+          >
+                        <li>
+              <a
+                class="dropdown-item"
+                routerLink="/admincarte"
+                routerLinkActive="active"
+                >Créations de cartes</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink=""
+                routerLinkActive="active"
+                >Validation des postes</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink=""
+                routerLinkActive="active"
+                >Gestion des profils</a
+              >
+            </li>
           </ul>
         </li>
       </ul>
+      </div>
+      
+      <ul class="nav navbar-nav navbar-right rounded-pill d-flex justify-content-end mr-20">
+        <li class="mr-20">
+          <a
+            class="dropdown-item styleButtonGreen"
+            routerLink="/formulaire"
+            routerLinkActive="active"
+            ><span class="glyphicon glyphicon-user"></span>s'enregistrer</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="dropdown-item styleButtonRed"
+            routerLink="/connexion"
+            routerLinkActive="active"
+            ><span class="glyphicon glyphicon-user"></span>Connexion</a
+          >
+        </li>
+      </ul>
+      </div>
+</nav>
+
+<!--
       <form class="place">
         <input
           class="form-control mr-2"
@@ -74,6 +205,5 @@
           Search
         </button>
       </form>
-    </div>
-  </div>
-</nav>
+
+      -->

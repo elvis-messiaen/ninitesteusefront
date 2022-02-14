@@ -22,7 +22,10 @@ import { VisageComponent } from './types/visage/visage.component';
 import { ModelpageComponent } from './reutilisable/modelpage/modelpage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormulaireComponent } from './component/formulaire/formulaire.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormulaireadminComponent } from './component/formulaireadmin/formulaireadmin.component';
+import { ConnexionComponent } from './component/connexion/connexion.component';
+import { VerificationaccesComponent } from './verificationacces/verificationacces.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +48,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     VisageComponent,
     ModelpageComponent,
     FormulaireComponent,
+    FormulaireadminComponent,
+    ConnexionComponent,
+    VerificationaccesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,HttpClientModule,ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

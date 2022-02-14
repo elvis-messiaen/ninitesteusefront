@@ -1,0 +1,11 @@
+export enum Typescard {
+  PARFUM = 'PARFUM',
+  CHEVEUX = 'CHEVEUX',
+  VISAGE = 'VISAGE',
+  CORPS = 'CORPS',
+  MAINS = 'MAINS',
+  PIED = 'PIED',
+  ANIMAUX = 'ANIMAUX',
+  ALIMENTAIRE = 'ALIMENTAIRE',
+  AUTRES = 'AUTRES',
+}

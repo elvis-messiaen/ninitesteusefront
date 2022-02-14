@@ -5,4 +5,5 @@
 export const environment = {
   production: false,
   host: 'http://localost:3000',
+  URL: 'http://localhost:8080',
 };

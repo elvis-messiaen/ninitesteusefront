@@ -18,7 +18,7 @@ body {
   margin-top: 50px;
 }
 .mt-100 {
-   margin-top: 100px;
+  margin-top: 100px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -29,14 +29,33 @@ body {
 .mb-200 {
   margin-bottom: 200px;
 }
+.ml-10 {
+  margin-left: 10px;
+}
 .ml-20 {
   margin-left: 20px;
+}
+.ml-30p {
+  margin-left: 30px;
+}
+.ml-40 {
+  margin-left: 40px;
 }
 .ml-50 {
   margin-left: 50px;
 }
 .ml-100 {
   margin-left: 100px;
+}
+.ml-33 {
+  margin-left: 33%;
+}
+.ml-30 {
+  margin-left: 30%;
+}
+
+.ml-50 {
+  margin-left: 50%;
 }
 .mr-20 {
   margin-right: 20px;
@@ -127,3 +146,39 @@ body {
   background: #4cd86a;
   box-shadow: 2px 2px 4px #b3b3b3, -2px -2px 4px #0e0d0d;
 }
+
+/*----------------connexion enregistrement style button-----------------*/
+
+.styleButtonRed {
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1.4em;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  background: #cf3a3a;
+  box-shadow: 2px 2px 4px #b3b3b3, -2px -2px 4px #0e0d0d;
+}
+
+
+.styleButtonGreen {
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1.4em;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  background: #559763;
+  box-shadow: 2px 2px 4px #b3b3b3, -2px -2px 4px #0e0d0d;
+}
+
+.buttonEffet {
+  padding: 8px;
+  text-decoration: none;
+  color: #0e0d0d;
+  margin: 50px;
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: 2px 2px 4px #b3b3b3, -2px -2px 4px #0e0d0d;
+}
+

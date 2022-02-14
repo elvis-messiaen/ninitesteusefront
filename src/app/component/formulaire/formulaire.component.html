@@ -1,21 +1,55 @@
 <div class="container">
-    <form (ngSubmit)="submit()" [formGroup]="form">
-        <div class="mt-100 ml-50  label flex-column form-group">
-            <label class="mr-20">Nom</label>
-            <input formControlName="nom"  type="text">
-        </div>
-        <div class="mt-100 ml-50  label flex-column form-group">
-            <label class="mr-20">Email</label>
-            <input formControlName="email" type="email">
-        </div>
-        <div class="mt-100 ml-50  label flex-column form-group">
-            <label class="mr-20">Mot de passe</label>
-            <input formControlName="password"  type="password">
-        </div>
-        <div class="mt-100 ml-50  label flex-column form-group">
-            <label class="mr-20">Confirmation</label>
-            <input formControlName="check" type="password">
-        </div>
-        <button class="btn greenButton">sauvegarder</button>
-    </form>
+  <form class="contour" (ngSubmit)="submit()" [formGroup]="form">
+    <div class="mt-50 ml-30 label flex-column form-group">
+      <label class="mr-20 min">Nom</label>
+      <input formControlName="nom" type="text" />
+      <div
+        class="error"
+        *ngIf="form.get('nom')?.errors && form.get('nom')?.touched"
+      >
+        Le champs est requis
+      </div>
+    </div>
+    <div class="mt-50 ml-30 label flex-column form-group">
+      <label class="mr-20 min">Email</label>
+      <input formControlName="email" type="email" />
+      <div
+        class="error"
+        *ngIf="form.get('email')?.errors && form.get('email')?.touched"
+      >
+        Le champs est requis
+      </div>
+    </div>
+    <div class="mt-50 ml-30 label flex-column form-group">
+      <label class="mr-20 min">Mot de passe</label>
+      <input formControlName="password" type="password" />
+      <div
+        *ngIf="form.get('password')?.errors && form.get('password')?.touched"
+      >
+        <p
+          class="error"
+         
+        >
+          champs requis ou longueur incorrect
+        </p>
+      </div>
+    </div>
+    <div class="mt-50 ml-30 label flex-column form-group">
+      <label class="mr-20 min">Confirmation</label>
+      <input #confirmation formControlName="check" type="password" />
+      <div
+        class="error"
+        *ngIf="form.get('check')?.errors && form.get('check')?.touched"
+      >
+        champs requis ou longueur incorrect
+      </div>
+    </div>
+    <button
+      [disabled]="!this.form.valid"
+      class="btn btn-danger marginsp"
+      style="margin-top: 20px"
+    >
+      Valider
+    </button>
+  </form>
 </div>

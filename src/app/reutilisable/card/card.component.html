@@ -1,4 +1,6 @@
-<div class="flex">
+<div *ngIf="true">
+  
+<div class="flex" *ngFor="let category of categories">
   <div class="contourCard card largCard flex">
     <img
       class="card-img-top d-flex justify-content-center taillePhoto "
@@ -6,15 +8,14 @@
       width="250px"
       alt="Card image cap"
     />
+    <div>{{category.typescard}}</div>
     <div class="card-body text-center adpateText">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">{{category.title}}</h5>
       <p class="card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        doloribus dolore praesentium illo laudantium atque nobis voluptatum,
-        repellat modi id tempora ut dolorum eum nulla doloremque maiores aliquid
-        consequuntur saepe.
+       {{category.description}}
       </p>
       <a href="#" class="btn btn-primary">En savoir +</a>
     </div>
   </div>
+</div>
 </div>

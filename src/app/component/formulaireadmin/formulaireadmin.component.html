@@ -1,0 +1,80 @@
+<div class="container">
+  <form class="contour" (ngSubmit)="submit()" [formGroup]="form">
+    <div class="mt-50 ml-30 label flex-column form-group">
+      <label class="mr-20 min">Titre</label>
+      <input formControlName="title" type="text" />
+      <div
+        class="error"
+        *ngIf="form.get('title')?.errors && form.get('title')?.touched"
+      >
+        Le champs est requis
+      </div>
+    </div>
+
+    <div class="mt-50 ml-30">
+      <label class="mr-20 mt-20 min">Type de card</label>
+      <select class="m-20" formControlName="typescard">
+        <option value="PARFUM">PARFUM</option>
+        <option value="CHEVEUX">CHEVEUX</option>
+        <option value="VISAGE">VISAGE</option>
+        <option value="CORPS">CORPS</option>
+        <option value="MAINS">MAINS</option>
+        <option value="PIED">PIED</option>
+        <option value="ANIMAUX">ANIMAUX</option>
+        <option value="ALIMENTAIRE">ALIMENTAIRE</option>
+        <option value="AUTRES">AUTRES</option>
+      </select>
+      <div
+        class="error"
+        *ngIf="form.get('typescard')?.errors && form.get('typescard')?.touched"
+      >
+        Le champs est requis
+      </div>
+    </div>
+
+    <div class="mt-50 ml-30 label flex-column form-group">
+      <label class="mr-20 min">Description</label>
+      <input formControlName="description" type="text" />
+      <div
+        class="error"
+        *ngIf="
+          form.get('description')?.errors && form.get('description')?.touched
+        "
+      >
+        La taille de texte est de 50 caractére minimum !
+      </div>
+    </div>
+
+    <div formArrayName="liens">
+    <div class="mt-50 ml-30">
+      <button type="button" (click)="addPhoto()" class="styleButtonGreen">
+        Ajouter liens pour photo
+      </button>
+    </div>
+    <div
+      class="flex-column"
+      [formControlName]="index"
+      *ngFor="let photo of liens.controls; let index = index"
+    >
+      <label class="mt-20 ml-30 row wid" for="liens">photo</label>
+     
+        <input class="mt-10 ml-30 row wid" type="text" />
+         <div class="ml-30">
+        <button type="button" (click)="remove(index)" class="row styleButtonRed">delete</button>
+      </div>
+    </div>
+
+    <button
+    
+      class="styleButtonRed marginsp"
+      style="margin-top: 20px"
+    >
+      Valider
+    </button>
+    </div>
+  </form>
+<div *ngIf="selectedCategory">
+  <app-verificationacces>[id]="selectedCategory"  </app-verificationacces>
+</div>
+
+</div>
